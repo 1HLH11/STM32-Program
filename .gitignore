@@ -1,0 +1,42 @@
+# ===== Keil MDK 编译产物 =====
+# 每个工程下的 MDK-ARM/<工程名>/ 是编译输出目录
+**/MDK-ARM/*/
+# 零散的编译/链接中间文件
+*.o
+*.d
+*.crf
+*.dep
+*.axf
+*.hex
+*.bin
+*.map
+*.lnp
+*.htm
+*.lst
+*.iex
+*.bak
+*.sct
+*.build_log.htm
+
+# Keil 的用户界面布局缓存（每台机器不同，无意义）
+*.uvguix.*
+
+# CubeMX / Keil 的生成与临时目录
+**/RTE/
+**/Objects/
+**/Listings/
+**/DebugConfig/
+
+# ===== 这些工程用不到的 CMSIS 大体积组件 =====
+# DSP 库、预编译 Lib、神经网络、文档、RTOS 模板，合计约 840MB
+**/Drivers/CMSIS/DSP/
+**/Drivers/CMSIS/Lib/
+**/Drivers/CMSIS/NN/
+**/Drivers/CMSIS/docs/
+**/Drivers/CMSIS/RTOS/
+**/Drivers/CMSIS/RTOS2/
+
+# ===== 系统文件 =====
+Thumbs.db
+desktop.ini
+.DS_Store
